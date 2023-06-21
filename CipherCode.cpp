@@ -116,7 +116,7 @@ String hackerStr(String txt, bool encode) {
 }
 
 String reverseStr(String txt) {
-  String txtInvert = "";
-  for (int i = txt.length() - 1; i >= 0; i--) txtInvert += txt.substring(i, i + 1);
-  return txtInvert;
+  String txtReverse = "";
+  for (int i = txt.length() - 1; i >= 0; i--) txtReverse += txt.substring(i, i + 1);
+  return txtReverse;
 }
