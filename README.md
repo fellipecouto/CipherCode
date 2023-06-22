@@ -3,7 +3,7 @@ Library with functions to encode texts
 
 ## Usage
 
-```Arduino
+```c++
 //library inclusion
 #include <CipherCode.h>
 
