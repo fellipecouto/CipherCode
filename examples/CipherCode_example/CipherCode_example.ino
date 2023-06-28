@@ -58,10 +58,19 @@ void setup() {
   String txtHackerDEC = hackerStr(txtHackerENC, false);  //false to decode
   Serial.println("= Decode: " + txtHackerDEC);
   Serial.println();
+  
+  //MSN String (Text in MSN chat format)
+  String txtMsnENC = msnStr(txtToEncode, true);  //true to encode
+  Serial.println("--- MSN String ---");
+  Serial.println("- Plain text: " + txtToEncode);
+  Serial.println("* Encode: " + txtMsnENC);
+  String txtMsnDEC = msnStr(txtMsnENC, false);  //false to decode
+  Serial.println("= Decode: " + txtMsnDEC);
+  Serial.println();
 
   //Reverse String (Returns the text in reverse)
   String txtReverseENC = reverseStr(txtToEncode);
-  Serial.println("--- Hacker String ---");
+  Serial.println("--- Reverse String ---");
   Serial.println("- Plain text: " + txtToEncode);
   Serial.println("* Encode: " + txtReverseENC);
   String txtReverseDEC = reverseStr(txtReverseENC);

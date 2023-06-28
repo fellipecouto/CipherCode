@@ -34,7 +34,7 @@ void loop() {
       txt = strSerial;
       Serial.println("--> " + txt);
       Serial.println("\nSelect the cipher type:");
-      Serial.println("1=CeasarCipher 2=VigenereCipher 3=MathCipher 4=MirrorCipher 5=Hacker 6=Reverse");
+      Serial.println("1=CeasarCipher 2=VigenereCipher 3=MathCipher 4=MirrorCipher 5=Hacker 6= MSN 7=Reverse");
       menu = 2;
     } else if (menu == 2) {
       typeCipher = strSerial.toInt();
@@ -75,6 +75,9 @@ void loop() {
           Serial.println("--> " + hackerStr(txt, code));
           break;
         case 6:
+          Serial.println("--> " + msnStr(txt, code));
+          break;
+		case 7:
           Serial.println("--> " + reverseStr(txt));
           break;
         default:

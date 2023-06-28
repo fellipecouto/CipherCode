@@ -3,4 +3,5 @@ vigenereCipher	KEYWORD2
 mathCipher	KEYWORD2
 mirrorCipher	KEYWORD2
 hackerStr	KEYWORD2
+msnStr	KEYWORD2
 reverseStr	KEYWORD2

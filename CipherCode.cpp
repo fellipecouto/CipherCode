@@ -115,6 +115,22 @@ String hackerStr(String txt, bool encode) {
   return txt;
 }
 
+String msnStr(String txt, bool encode) {
+  String txtCode = "";
+  for (int i = 0; i < txt.length(); i++) {
+    String t = txt.substring(i, i + 1);
+    randomSeed(millis());
+    int r = random(2);
+    if (r == 0 || encode == false) {
+      t.toLowerCase();
+    } else {
+      t.toUpperCase();
+    }
+    txtCode += t;
+  }
+  return txtCode;
+}
+
 String reverseStr(String txt) {
   String txtReverse = "";
   for (int i = txt.length() - 1; i >= 0; i--) txtReverse += txt.substring(i, i + 1);

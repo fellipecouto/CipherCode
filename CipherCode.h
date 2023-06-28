@@ -24,6 +24,9 @@ String mirrorCipher(String txt);
 //Converts text to Hacker format
 String hackerStr(String txt, bool encode = true);
 
+//Converts text to MSN chat format
+String msnStr(String txt, bool encode = true);
+
 //Returns the text in reverse
 String reverseStr(String txt);
 

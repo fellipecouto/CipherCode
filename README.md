@@ -20,7 +20,10 @@ String mathCipher(String txt, long key, bool encode);
 String mirrorCipher(String txt);
 
 //Converts text to Hacker format
-String hackerStr(String txt);
+String hackerStr(String txt, bool encode);
+
+//Converts text to MSN chat format
+String msnStr(String txt, bool encode);
 
 //Returns the text in reverse
 String reverseStr(String txt);
