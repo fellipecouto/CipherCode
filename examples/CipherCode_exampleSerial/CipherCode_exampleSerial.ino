@@ -77,7 +77,7 @@ void loop() {
         case 6:
           Serial.println("--> " + msnStr(txt, code));
           break;
-		case 7:
+	case 7:
           Serial.println("--> " + reverseStr(txt));
           break;
         default:
